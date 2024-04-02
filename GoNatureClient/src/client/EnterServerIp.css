@@ -1,0 +1,70 @@
+/* Base application styling with a consistent background */
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #dceef1, #c4dfe6);
+    -fx-background-size: cover;
+    -fx-font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the title bar */
+.titleBar {
+    -fx-background-color: #0077CC; /* Blue background for the title bar */
+    -fx-pref-height: 20px; /* Preferred height for the title bar */
+    -fx-alignment: center-right; /* Align the close button to the right */
+}
+
+/* Styling for the close button */
+#closeBtn {
+    -fx-background-color: #ff4f4f; /* Red background for the close button */
+    -fx-text-fill: white; /* White text for the "X" */
+    -fx-font-weight: bold; /* Make the "X" bold */
+    -fx-background-radius: 0; /* No rounded corners for the close button */
+    -fx-padding:  10px  10px; /* Padding for the close button */
+}
+
+#closeBtn:hover {
+    -fx-background-color: #D60000; /* Slightly darker red on hover */
+}
+
+/* Styling for text fields with clear visibility and aesthetic appeal */
+.text-field {
+    -fx-font-size: 13px;
+    -fx-border-color: #74a662;
+    -fx-border-width: 1px;
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+}
+
+.text-field:focused {
+    -fx-border-color: #508860;
+}
+
+/* Specific style for the enterHostIP TextField */
+#enterHostIP {
+    -fx-font-size: 14px;
+    -fx-border-color: #508860;
+    -fx-border-width: 2px;
+}
+
+/* Generic button styling */
+.button {
+    -fx-background-color: #507856; /* Deep green */
+    -fx-text-fill: white;
+    -fx-border-radius: 1px;
+    -fx-background-radius: 1px;
+    -fx-padding: 5px 15px;
+}
+
+.button:hover {
+    -fx-background-color: #3e6147;
+}
+
+/* Specific style for the okBtn Button */
+#okBtn1 { /* Ensure this matches the ID in your FXML */
+    -fx-background-color: #74a662; /* Lighter green variation */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+#okBtn1:hover { /* Ensure this matches the ID in your FXML */
+    -fx-background-color: #5d8a4b;
+}

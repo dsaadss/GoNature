@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<!-- change fx:controller -->
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="616.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientGUI.DmMenuController">
+   <children>
+      <Label layoutX="299.0" layoutY="29.0" text="Department Manager Menu">
+
+      </Label>
+      <Button layoutX="216.0" layoutY="526.0" mnemonicParsing="false" onAction="#VisitReport" text="Visit report" />
+      <Button layoutX="361.0" layoutY="526.0" mnemonicParsing="false" onAction="#CancelledReport" text="Cancelled orders report" />
+      <TableView fx:id="capicityTable" layoutX="62.0" layoutY="94.0" prefHeight="169.0" prefWidth="565.0">
+        <columns>
+          <TableColumn fx:id="parkNameCapacityTable" prefWidth="93.0" text="Park name" />
+          <TableColumn fx:id="maxBeforeCapacityTable" prefWidth="146.0" text="Max capacity before" />
+            <TableColumn fx:id="maxAfterCapacityTable" prefWidth="168.0" text="Max capacity after" />
+            <TableColumn fx:id="yesCapacityTable" minWidth="0.0" prefWidth="71.0" />
+            <TableColumn fx:id="noCapacityTable" prefWidth="86.0" />
+        </columns>
+      </TableView>
+      <Label layoutX="66.0" layoutY="57.0" text="Requests for change capacity table" />
+      <TableView fx:id="dwellTimeTable" layoutX="58.0" layoutY="322.0" prefHeight="169.0" prefWidth="565.0">
+        <columns>
+          <TableColumn fx:id="parkNameDwellTable" prefWidth="113.0" text="Park name" />
+          <TableColumn fx:id="maxBeforeDwellTable" prefWidth="155.0" text="Max dwell time before" />
+            <TableColumn fx:id="maxAfterDwellTable" prefWidth="144.0" text="Max dwell time after" />
+            <TableColumn fx:id="yesDwellTable" prefWidth="69.0" />
+            <TableColumn fx:id="noDwellTable" prefWidth="83.0" />
+        </columns>
+      </TableView>
+      <Label layoutX="58.0" layoutY="291.0" text="Requests for change dwell time table" />
+      <Button fx:id="LogoutBtn" layoutX="32.0" layoutY="561.0" mnemonicParsing="false" onAction="#clickOnLogout" text="Logout" />
+   </children>
+</Pane>
